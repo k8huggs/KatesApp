@@ -1,5 +1,7 @@
 # README
 
+Hi, I'm Kate, the creator of Transience. Transience is an app designed to help you connect to artists for coaching.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
