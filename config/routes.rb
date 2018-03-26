@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'simple_pages/what'
+
+  get 'simple_pages/coaching'
+
+  get 'simple_pages/login'
+
   get 'simple_pages/about'
 
   get 'simple_pages/contact'
