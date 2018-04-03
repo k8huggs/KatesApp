@@ -1,14 +1,20 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  background: url('/assets/background_one.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: cover;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  background-color: #727272;
-  background-image: image-url('/assets/background_one.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: transparent;
 }
 
 .navbar {
@@ -46,9 +52,18 @@ h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   text-align: right;
+  text-decoration: underline;
   color: #e7dfd0;
   font-size: 50px;
-  margin: 50px;
+  margin: 50px 50px 20px 50px;
+}
+
+p {
+  color: #e7dfd0;
+  font-family: inherit;
+  text-align: right;
+  font-size: 25px;
+  margin-right: 50px;
 }
 
 footer {
@@ -58,11 +73,10 @@ footer {
   bottom: 0;
   height: 50px;
   padding:10px;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   overflow:auto;
-  text-align:center;
-  float:left;
   margin-top:50px;
-  position: absolute;
+  position: fixed;
   font-size: 15px;
 }
