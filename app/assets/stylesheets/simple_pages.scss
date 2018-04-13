@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
-  background: url('/assets/background_one.jpeg') no-repeat center center fixed;
+  background: url('/assets/images/background_one.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,8 +15,16 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   background-color: transparent;
+  margin: 0;
 }
 
+.container-fluid {
+  width: 100%;
+  position: sticky;
+}
+div.navbar-collapse.collapse {
+  padding-top: 10px;
+}
 .navbar {
   background-color: #0e0b16;
   border-bottom: none;
@@ -27,7 +35,7 @@ body {
   display: inline-block;
 }
 
-li {
+a.nav-link {
   padding: 15px;
   color: #4717f6;
 }
@@ -38,13 +46,17 @@ ul li {
   color: red;
 }
 
-.navbar-inverse .navbar-nav > .active > li  {
+.navbar-inverse .navbar-nav > .active > a.nav-link  {
   color: #a239ca;
   text-decoration: underline;
 }
 
 .headphones {
   padding-top: 40px;
+}
+
+div.image-responsive.product-img {
+  margin: 0;
 }
 
 h1 {
@@ -58,6 +70,19 @@ h1 {
   margin: 50px 50px 20px 50px;
 }
 
+h2 {font-family: 'Open Sans', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+text-align: left;
+text-decoration: underline;
+color: #e7dfd0;
+font-size: 40px;
+}
+
+.column_content {
+  padding: 10px;
+}
+
 p {
   color: #e7dfd0;
   font-family: inherit;
@@ -66,7 +91,7 @@ p {
   margin-right: 50px;
 }
 
-footer {
+footer.container-fluid.copy-right {
   background-color: #0e0b16;
   color: #4717f6;
   width: 100%;

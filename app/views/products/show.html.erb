@@ -11,9 +11,20 @@
 </p>
 
 <p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
   <strong>Image url:</strong>
   <%= @product.image_url %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<p>
+  <strong>Colour:</strong>
+  <%= @product.colour %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %>
+|
 <%= link_to 'Back', products_path %>

@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Product.create(name: "Half-Hour Coaching with a Grammy Award Winning Artist", description: "Thirty minute coaching from an Grammy Award winning artist. Get specific instrument instruction or coaching within the industry. Feel free to checkout their work on Spotify as you're booking!")
