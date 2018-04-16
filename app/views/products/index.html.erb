@@ -6,7 +6,7 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-12 col-md-4 col-lg-4 column_content">
-        <%= image_tag("musicians_on_bus.png", class: "img-responsive product-img") %>
+        <%= image_tag(product.image_url, class: "img-responsive") %>
         <a href="#"><h2><%= product.name %></h2></a>
         <content><%= product.description %></content>
         <strong><%= product.price %><strong>
