@@ -2,12 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
-  background: url('/assets/images/background_one.jpeg') no-repeat center center fixed;
+  background: url('/assets/background_one.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: cover;
+  background-color: #666666;
 }
 
 body {
@@ -38,6 +39,7 @@ div.navbar-collapse.collapse {
 a.nav-link {
   padding: 15px;
   color: #4717f6;
+  font-size: 17px;
 }
 
 ul li {
@@ -105,4 +107,13 @@ footer.container-fluid.copy-right {
   margin-top:50px;
   position: fixed;
   font-size: 15px;
+}
+
+// Carousel Styles //
+div.carousel-caption {
+  font-size: 40px;
+  color: #e7dfd0;
+  text-shadow: 5px;
+  text-decoration: underline;
+  margin-bottom: 20px;
 }
