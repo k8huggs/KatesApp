@@ -28,6 +28,17 @@
          </button>
        </div>
        <div class="navbar-collapse collapse">
+         <ul class="navbar-left">
+          <!-- Search -->
+          <li>
+            <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+            <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control", placeholder: "What can I find for you?" %>
+          </li>
+          <li>
+            <%= form.submit 'Search', class: 'btn btn-success'%>
+            <% end %>
+          </li>
+        </ul>
          <ul>
            <li><%= link_to "Home", root_path, class:"nav-link" %></li>
            <li><%= link_to "Who", simple_pages_about_path, class:"nav-link" %></li>

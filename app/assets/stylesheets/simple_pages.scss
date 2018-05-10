@@ -23,6 +23,9 @@ body {
   width: 100%;
   position: sticky;
 }
+
+// NAV BAR //
+
 div.navbar-collapse.collapse {
   padding-top: 10px;
 }
@@ -52,6 +55,40 @@ ul li {
   color: #a239ca;
   text-decoration: underline;
 }
+
+ul.navbar-left {
+  margin-right: 15px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.form-control {
+  display: inline;
+  color: #e7dfd0;
+  background-color: #666666;
+  margin-top: 0.5em;
+}
+.form-control:focus {
+  border-color: #00dead;
+}
+.btn {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+.btn-success {
+  background-color: #4717f6;
+  border-color: #4717f6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.btn-success:hover {
+  background-color: #e7dfd0;
+  border-color: #94b0b7;
+  color: #black;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+// MAIN CONTENT //
 
 .headphones {
   padding-top: 40px;
