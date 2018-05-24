@@ -5,5 +5,25 @@
   <div class="col-sm-12 col-md-6 col-lg-6">
     <h1>Contact Us.</h1>
       <p>Having issues with connecting?<br>Contact us here.</p>
+
+      <%= flash[:notice] %>
+
+      <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+      <div class="row col-md-12">
+        <div class="form-group">
+          <%= form.label :name %>
+          <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+        </div>
+        <div class="form-group">
+          <%= form.label :email %>
+          <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+        </div>
+        <div class="form-group">
+          <%= form.label :message %>
+          <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+        </div>
+      </div>
+      <%= form.submit "Send", class: "form_label" %>
+      <% end %>
   </div>
 </div>
