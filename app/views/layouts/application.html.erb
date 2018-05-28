@@ -51,8 +51,20 @@
      </div>
    </nav>
 
+   <section class="container-fluid minipage">
+
+     <!-- Flash Notice Tags -->
+    <% if notice %>
+      <div id="notice" class="alert alert-warning"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div id="alert" class="alert alert-danger"><%= alert %></div>
+    <% end %>
+
     <%= yield %>
 
+  </section>
+  
   <footer class = "container-fluid copy-right">
     &copy; Kate Huggins, Transience LLC 2018
   </footer>
