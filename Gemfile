@@ -62,3 +62,6 @@ end
 
 # Adding Devise
 gem 'devise'
+
+# Adding CanCanCan
+gem 'cancancan', '~> 2.0'

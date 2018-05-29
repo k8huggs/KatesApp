@@ -64,10 +64,13 @@
 
      <!-- Flash Notice Tags -->
     <% if notice %>
-      <div id="notice" class="alert alert-warning"><%= notice %></div>
+      <p id="notice" class="alert alert-info">
+      <%= notice %></p>
     <% end %>
+
     <% if alert %>
-      <div id="alert" class="alert alert-danger"><%= alert %></div>
+      <p id="alert" class="alert alert-info">
+      <%= alert %></p>
     <% end %>
 
     <%= yield %>
