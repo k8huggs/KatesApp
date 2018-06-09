@@ -1,3 +1,25 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align: right;
+  text-decoration: underline;
+  color: #e7dfd0;
+  font-size: 50px;
+  margin: 50px 50px 20px 0px;
+  text-align: left;
+}
+
+content {
+  color: #e7dfd0;
+  text-align: left;
+}
+
+h4>p {
+  text-align: left;
+  margin-right: 0px;
+  font-size: 15px;
+}
