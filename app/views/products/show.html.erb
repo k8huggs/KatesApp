@@ -13,6 +13,11 @@
         <%= @product.name %>
       </p>
 
+      <p>Average Rating:
+        <div class="rated" data-score="<%= @product.average_rating %>">
+        </div>
+      </p>
+      
       <p class="description">
        <strong>Description:</strong>
         <%= @product.description %>
@@ -40,6 +45,11 @@
         <strong>Colour:</strong>
         <%= @product.colour %>
       </p>
+
+      <%= render 'new_comment' %>
+
+      <%= render 'comments' %>
+
     </div>
   </div>
 
