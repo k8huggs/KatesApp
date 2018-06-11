@@ -65,3 +65,6 @@ gem 'devise'
 
 # Adding CanCanCan
 gem 'cancancan', '~> 2.0'
+
+# Adding Will_Paginate
+gem 'will_paginate', '~> 3.1.0' 

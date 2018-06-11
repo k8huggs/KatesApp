@@ -142,7 +142,6 @@ footer.container-fluid.copy-right {
   justify-content: flex-end;
   overflow:auto;
   margin-top:50px;
-  position: fixed;
   font-size: 15px;
 }
 
@@ -168,8 +167,4 @@ input.form-control {
 
 textarea.form-control {
   margin-right: 20px;
-}
-
-form {
-  padding-bottom: 60px;
 }
