@@ -1,0 +1,373 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 4, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/products.scss */
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align: right;
+  text-decoration: underline;
+  color: #e7dfd0;
+  font-size: 50px;
+  margin: 50px 50px 20px 0px;
+  text-align: left;
+}
+
+/* line 16, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/products.scss */
+content {
+  color: #e7dfd0;
+  text-align: left;
+}
+
+/* line 21, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/products.scss */
+h4 > p {
+  text-align: left;
+  margin-right: 0px;
+  font-size: 15px;
+}
+/* line 1, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+html {
+  background: url("background_one.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: cover;
+  background-color: #666666;
+}
+
+/* line 14, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background-color: transparent;
+  margin: 0;
+}
+
+/* line 22, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.container-fluid {
+  width: 100%;
+  position: sticky;
+}
+
+/* line 29, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+div.navbar-collapse.collapse {
+  padding-top: 10px;
+}
+
+/* line 32, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  background-color: #0e0b16;
+  border-bottom: none;
+  font-size: 20px;
+}
+
+/* line 38, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.navbar-header {
+  display: inline-block;
+}
+
+/* line 42, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+a.nav-link {
+  padding: 15px;
+  color: #4717f6;
+  font-size: 17px;
+}
+
+/* line 48, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+ul li {
+  display: inline-block;
+  float: right;
+  color: red;
+}
+
+/* line 54, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > .active > a.nav-link {
+  color: #a239ca;
+  text-decoration: underline;
+}
+
+/* line 59, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+ul.navbar-left {
+  margin-right: 15px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 64, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.form-control {
+  display: inline;
+  color: #e7dfd0;
+  background-color: #666666;
+  margin-top: 0.5em;
+}
+
+/* line 70, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.form-control:focus {
+  border-color: #00dead;
+}
+
+/* line 73, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.btn {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* line 77, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.btn-success {
+  background-color: #4717f6;
+  border-color: #4717f6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* line 83, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.btn-success:hover {
+  background-color: #e7dfd0;
+  border-color: #94b0b7;
+  color: #black;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 93, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.headphones {
+  padding-top: 40px;
+}
+
+/* line 97, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+div.image-responsive.product-img {
+  margin: 0;
+}
+
+/* line 101, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align: right;
+  text-decoration: underline;
+  color: #e7dfd0;
+  font-size: 50px;
+  margin: 50px 50px 20px 50px;
+}
+
+/* line 112, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-align: left;
+  text-decoration: underline;
+  color: #e7dfd0;
+  font-size: 40px;
+}
+
+/* line 121, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+.column_content {
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+/* line 126, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+p {
+  color: #e7dfd0;
+  font-family: inherit;
+  text-align: right;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+/* line 134, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+footer.container-fluid.copy-right {
+  background-color: #0e0b16;
+  color: #4717f6;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+/* line 149, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+div.carousel-caption {
+  font-size: 40px;
+  color: #e7dfd0;
+  text-shadow: 5px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* line 159, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+label {
+  color: #e7dfd0;
+}
+
+/* line 163, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+input.form-control {
+  margin-right: 20px;
+  padding: 15px;
+}
+
+/* line 168, /Users/khuggins/Desktop/KatesApp/app/assets/stylesheets/simple_pages.scss */
+textarea.form-control {
+  margin-right: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
