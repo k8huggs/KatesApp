@@ -45,9 +45,7 @@
            <li><%= link_to "What", simple_pages_what_path, class:"nav-link" %></li>
            <li><%= link_to "Coaching", simple_pages_coaching_path, class:"nav-link" %></li>
            <li><%= link_to "Contact", simple_pages_contact_path, class:"nav-link" %></li>
-           <li><%= link_to "Login", simple_pages_login_path, class:"nav-link" %></li>
-         </ul>
-         <ul class="nav pull-right">
+           <li><%= link_to "Products", products_path, class:"nav-link" %></li>
            <li>
              <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, method: :delete) %>

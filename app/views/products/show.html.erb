@@ -33,25 +33,12 @@
         <%= @product.price %>
       </p>
 
-      <p>
-        <%= @product.highest_rating_comment  %>
-      </p>
-
-      <p>
-        <%= @product.lowest_rating_comment  %>
-      </p>
-
-      <p>
-        <strong>Colour:</strong>
-        <%= @product.colour %>
-      </p>
-
       <%= render 'new_comment' %>
 
       <%= render 'comments' %>
 
       <%= will_paginate @comments %>
-      
+
     </div>
   </div>
 
