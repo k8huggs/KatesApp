@@ -45,8 +45,9 @@ a.nav-link {
   font-size: 17px;
 }
 
-.login {
-  color: #4717f6;
+li.login.a {
+  padding-right: 15px;
+  text-decoration-color: #4717f6;
   font-size: 17px;
 }
 
@@ -157,6 +158,14 @@ div.carousel-caption {
   text-shadow: 5px;
   text-decoration: underline;
   margin-bottom: 20px;
+}
+
+a.right.carousel-control {
+  width: 5%;
+}
+
+a.left.carousel-control {
+  width: 5%;
 }
 
 // CONTACT MESSAGE FORM //
