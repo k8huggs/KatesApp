@@ -13,4 +13,12 @@
  *= require_tree .
  *= require_self
  */
- 
+ .alert-info {
+    color: #0e0b16;
+    background-color: #000;
+    border-color: #4717f6;
+}
+
+.btn-default {
+  background-color: #e7dfd0;
+}
