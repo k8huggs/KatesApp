@@ -12,4 +12,6 @@ class UserMailer < ApplicationMailer
     @appname = "Transience"
     mail(to: user.email,
           subject: "Welcome to #{@appname}! Get ready to meet your coach!")
+  end
+
 end
