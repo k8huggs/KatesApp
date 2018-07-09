@@ -1,39 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Incoming Message</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-
-  <body style="margin: 0; padding: 0;">
-     <table align="center" border="1" cellpadding="0" cellspacing="0" width="70%" style="border-collapse: collapse;">
-       <tbody>
-         <tr>
-           <td align="center" bgcolor="#70bbd9" style="padding: 40px 0 30px 0; color: #ffffff; letter-spacing: 5px; font-size: 20px;">
-             <img src="https://findicons.com/files/icons/1974/glossy_orange_orb_social_media/256/mail_webtreatsetc.png" alt="Tab Codes Email" width="300" height="230" style="display: block;" />
-             <h1 style="font-family: Arial, sans-serif;">Tab Codes</h1>
-           </td>
-         </tr>
-         <tr>
-           <td align="center" bgcolor="#ffffff" style="padding: 40px 0 30px 0;">
-             <table border="1" cellpadding="0" cellspacing="0" width="90%">
-               <tr>
-                 <td align="center" style="padding: 30px 0 30px 0; font-family: Arial, sans-serif; border: none;">Hey "Tab Codes" You have a message from one of your Shiny Users!</td>
-               </tr>
-               <tr>
-                 <td align="center" style="padding: 20px 0 30px 0; font-family: Arial, sans-serif; border: none;"><p><%= @message %></p></td>
-               </tr>
-             </table>
-           </td>
-         </tr>
-         <tr>
-           <td align="center" bgcolor="#e76824" style="padding: 20px 0 20px 0; font-family: Arial, sans-serif; color: #444444">
-             <span>&copy; 2017 Tab Codes</span>
-           </td>
-         </tr>
-       </tbody>
-     </table>
-
-   </body>
- </html>
+<table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+  <tbody>
+    <tr>
+      <td><p>You have received a new contact form message. The contents of the message are:</p></td>
+    </tr>
+    <tr>
+      <td><p><%= @message %></p></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,18 +1,25 @@
-<div class="container form-authentication form-small compact-form-group">
-  <div class="row form-authentication-inner">
+<div class="container">
+  <div class="user_form" role="form">
 
-    <h2 class="form-heading text-center brand">Transience</h2>
+    <h2 class="form-heading text-center brand">
+      Transience
+    </h2>
+
     <h3 class="form-heading text-center">
       Sign in to meet your Coach.
     </h3>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-      <%= f.label :email, class: "sr-only" %>
+    <div class="form-group">
+      <%= f.label :email, hidden: true %>
       <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email address" %>
+    </div>
 
-      <%= f.label :password, class: "sr-only" %>
+    <div class="form-group">
+      <%= f.label :password, hidden: true %>
       <%= f.password_field :password, autocomplete: "off", placeholder: "Your password", class: "form-control" %>
+    </div>
 
       <% if devise_mapping.rememberable? -%>
         <div class="checkbox">
@@ -26,9 +33,7 @@
       </div>
     <% end %>
 
-  <div class="link-group">
     <%= render "devise/shared/links" %>
-  </div>
 
  </div>
 </div>

@@ -61,17 +61,17 @@
    <section class="container-fluid minipage">
 
      <!-- Flash Notice Tags -->
-    <% if notice %>
-      <p id="notice" class="alert alert-info">
-      <%= notice %></p>
-    <% end %>
+     <div class="container">
 
-    <% if alert %>
-      <p id="alert" class="alert alert-info">
-      <%= alert %></p>
-    <% end %>
+         <% if notice %>
+           <p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+         <% end %>
 
-    <%= yield %>
+         <% if alert %>
+           <p id="alert" class="alert alert-danger" role="alert"><%= alert %></p>
+         <% end %>
+
+    </div>
 
   </section>
 

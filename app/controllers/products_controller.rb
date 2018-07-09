@@ -4,12 +4,11 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all.paginate(page: params[:page], per_page: 5)
     if params[:q]
       search_term = params[:q] # return our unfiltered list here
-      @products = Product.search(search_term)
+      @products = Product.search(search_term).paginate(page: params[:page], per_page: 3)
     else
-      @products = Product.all
+      @products = Product.all.paginate(page: params[:page], per_page: 3)
     end
   end
 
@@ -17,8 +16,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
-    @comments = Comment.paginate(page: params[:page], per_page: 3)
+    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
   end
 
   # GET /products/new

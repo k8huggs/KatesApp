@@ -12,6 +12,7 @@ describe Comment do
     end
 
     it "is not valid without user id" do
-      expedt(Comment.new(user_id:nil)).not_to_be_valid
+      expect(Comment.new(user_id:nil)).not_to_be_valid
+    end
   end
 end

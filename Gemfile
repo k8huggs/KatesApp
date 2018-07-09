@@ -68,3 +68,6 @@ gem 'cancancan', '~> 2.0'
 
 # Adding Will_Paginate
 gem 'will_paginate', '~> 3.1.0'
+
+# Adding Gem for Rails Controller Functional Tests
+gem 'rails-controller-testing'
