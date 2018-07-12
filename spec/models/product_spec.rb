@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Product do
 
-let(:product) { Product.create!(name: "30 Minute Midgrade")}
+let(:product) { Product.create!(name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45)}
 
 let(:user) {User.create!(email: "random@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
   before do
