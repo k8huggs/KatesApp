@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe UsersController type: :controller do
+describe UsersController, type: :controller do
   let(:user) {User.create!(email: "myrandom@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
 
   # describe 'GET #index' do

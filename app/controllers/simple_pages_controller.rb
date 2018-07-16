@@ -7,10 +7,6 @@ class SimplePagesController < ApplicationController
     @products = Product.limit(5)
   end
 
-  def index
-    redirect_to "/simple_pages/login"
-  end
-
   def login
   end
 
