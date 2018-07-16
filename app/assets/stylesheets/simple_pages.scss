@@ -139,11 +139,11 @@ p {
 
 #main {
   overflow:auto;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 footer.container-fluid.copy-right {
-  position: sticky;
+  // position: sticky;
   background-color: #0e0b16;
   color: #4717f6;
   width: 100%;
@@ -155,9 +155,10 @@ footer.container-fluid.copy-right {
   overflow:auto;
   margin-top:50px;
   font-size: 15px;
-  // position: relative;
+  position: relative;
   margin-top: -50px; /* negative value of footer height */
-  clear: both;
+  height: 50px;
+  clear:both;
   padding-top:20px;
 }
 
