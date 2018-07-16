@@ -4,7 +4,7 @@ describe Product do
 
 let(:product) { Product.create!(name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45)}
 
-let(:user) {User.create!(email: "random@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
+let(:user) {User.create!(email: "myrandom@email.com", first_name: "User", last_name: "Random", admin: false, password: "Yellow123")}
   before do
     product.comments.create!(rating: 1, user: user, body: "Bad Session")
     product.comments.create!(rating: 3, user: user, body: "Ok Session")

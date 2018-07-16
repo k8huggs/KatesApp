@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe UsersController type: :controller do
-  let(:user) {User.create!(email: "random@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
+  let(:user) {User.create!(email: "myrandom@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
 
   # describe 'GET #index' do
   #   it 'renders users index template' do
@@ -18,8 +18,8 @@ describe UsersController type: :controller do
         sign_in :user
       end
       it 'loads correct user details' do
-        get :show, params: { id: @user.id }
-        expect(assigns(:user)).to eq @user
+        get :show, params: { id: user.id }
+        expect(assigns(:user)).to eq user
         expect(response).to have_http_status(200)
       end
     end
