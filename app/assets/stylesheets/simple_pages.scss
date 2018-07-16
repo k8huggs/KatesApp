@@ -43,6 +43,7 @@ a.nav-link {
   padding: 15px;
   color: #4717f6;
   font-size: 17px;
+  background-color: inherit;
 }
 
 ul li {
@@ -144,6 +145,7 @@ footer.container-fluid.copy-right {
   overflow:auto;
   margin-top:50px;
   font-size: 15px;
+  flex-shrink: 0;
 }
 
 // Carousel Styles //
