@@ -17,6 +17,7 @@ body {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   background-color: transparent;
   margin: 0;
+  height: 100%;
 }
 
 .container-fluid {
@@ -130,6 +131,15 @@ p {
   text-align: right;
   font-size: 25px;
   margin-right: 50px;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom: 150px;
 }
 
 footer.container-fluid.copy-right {
