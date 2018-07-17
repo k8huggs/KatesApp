@@ -15,6 +15,7 @@
 
 
   <body data-spy="scroll" data-target=".navbar">
+  <div id="wrap">
     <nav class="navbar navigation-wrapper navbar-inverse" role="navigation">
      <div class="container-fluid container-nav-bar">
        <div class="navbar-header">
@@ -72,8 +73,10 @@
   </section>
 
   <%= yield %>
+  <div id="push"></div>
+</div>
 
-  <footer class = "container-fluid copy-right">
+  <footer class="container-fluid copy-right" id="footer">
     &copy; Kate Huggins, Transience LLC 2018
   </footer>
 
