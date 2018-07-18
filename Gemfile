@@ -17,6 +17,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adding RSpec-rails
   gem 'rspec-rails', '~> 3.7'
+  # Install FactoryBot
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 # Use Puma as the app server
