@@ -73,3 +73,6 @@ gem 'will_paginate', '~> 3.1.0'
 
 # Adding Gem for Rails Controller Functional Tests
 gem 'rails-controller-testing'
+
+# Adding Stripe
+gem 'stripe'

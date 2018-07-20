@@ -42,8 +42,19 @@
     </div>
   </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %>
-|
-<%= link_to 'Back', products_path %>
+  <% if (signed_in? && current_user.admin?) %>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+  <% else %>
+    <%= link_to 'Book', simple_pages_debug_session_path(id: @product.id) %> |
+    <%= link_to 'Back', products_path %>
+    <div style='padding-top:10px'></div>
+    <!-- Stripe payments button -->
+    <%= form_with(url: '/payments/create') do |form| %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+      <%= hidden_field_tag(:product_id, @product.id) %>
+    <% end %>
+  <% end %>
+
 </div>
 </article>
