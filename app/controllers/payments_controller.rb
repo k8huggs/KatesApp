@@ -19,7 +19,7 @@ def create
       charge = Stripe::Charge.create(
         # customer: customer.id,
         amount: (@product.price * 100).to_i,
-        currency: "dollar",
+        currency: "usd",
         source: token,
         description: "Magical Unicorn Dust '"+@product.name+"'",
         metadata: {
