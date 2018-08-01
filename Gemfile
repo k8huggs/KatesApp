@@ -76,3 +76,6 @@ gem 'rails-controller-testing'
 
 # Adding Stripe
 gem 'stripe'
+
+# Adding byebug
+gem 'byebug'
