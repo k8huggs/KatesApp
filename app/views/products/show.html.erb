@@ -10,10 +10,13 @@
     </p>
     </div>
       <div class="col-sm-3 col-md-3">
+
+      <% cache @product do %>
       <p>
         <strong>Name:</strong>
         <%= @product.name %>
       </p>
+      <% end %>
 
       <p>Average Rating:
         <div id="average_rating_outside_div">
@@ -21,20 +24,26 @@
         </div>
       </p>
 
+      <% cache @product do %>
       <p class="description">
        <strong>Description:</strong>
         <%= @product.description %>
       </p>
+      <% end %>
 
+      <% cache @product do %>
       <p>
         <strong>Colour:</strong>
         <%= @product.colour %>
       </p>
+      <% end %>
 
+      <% cache @product do %>
       <p>
         <strong>Price:</strong>
         <%= @product.price %>
       </p>
+      <% end %>
 
       <%= render 'new_comment' %>
 

@@ -1,3 +1,8 @@
+<!-- Loop the products html into the webpage -->
+<!-- < % @products.each do |product| % > -->
+
+<% cache product do %>
+
 <div class="col-sm-4 col-md-4">
   <div class="one-prod">
     <h3>
@@ -29,3 +34,5 @@
     <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default"  %>
   </div>
 </div><!-- /col -->
+
+<% end %>
