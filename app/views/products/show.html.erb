@@ -31,6 +31,15 @@
       </p>
       <% end %>
 
+      <% if user_signed_in? %>
+      <%= form_with(url: '/payments/create') do |form| %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+      <% else %>
+        <button class="btn-info"><%= link_to('Please Login to buy', new_user_session_path) %></button>
+      <% end %>
+
       <% cache @product do %>
       <p>
         <strong>Colour:</strong>
