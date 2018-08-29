@@ -1,4 +1,3 @@
-$(document).on('turbolinks:load', function(){
 var refreshRating = function() {
     $('.rating').raty({
       starHalf: '<%= asset_path 'star-half.png' %>',
@@ -18,13 +17,13 @@ var refreshRating = function() {
     });
   };
 
-   $(document).on('turbolinks:load ajaxSuccess', function(){
+$(document).on('turbolinks:load ajaxSuccess', function(){
 
-     refreshRating();
+  refreshRating();
 
-    $('#zoom_product_showpage').elevateZoom({
+  $('#zoom_product_showpage').elevateZoom({
     zoomType	: "lens",
     lensShape : "round",
     lensSize  : 200
   });
-});
+})

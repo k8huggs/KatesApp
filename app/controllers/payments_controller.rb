@@ -21,7 +21,7 @@ def create
         amount: (@product.price * 100).to_i,
         currency: "usd",
         source: token,
-        description: "Magical Unicorn Dust '"+@product.name+"'",
+        description: "Magical Unicorn Dust '#{@product.name}'",
         metadata: {
           'Email-address:' => params[:stripeEmail]
         },

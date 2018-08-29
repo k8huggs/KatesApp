@@ -2,68 +2,62 @@
   <div class="show">
     <p id="notice"><%= notice %></p>
     <div class="row" data-product-id="<%= @product.id %>">
-    <div class="col-sm-9 col-md-9">
-    <p>
-      <%= image_tag(@product.image_url, id: "zoom_product_showpage",
-      class: "img-responsive product_show_page_image img-zoom",
-      alt: @product.image_url) %>
-    </p>
-    </div>
-      <div class="col-sm-3 col-md-3">
-
       <% cache @product do %>
-      <p>
-        <strong>Name:</strong>
-        <%= @product.name %>
-      </p>
-      <% end %>
-
-      <p>Average Rating:
-        <div id="average_rating_outside_div">
-          <p><div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+        <div class="col-sm-9 col-md-9">
+          <p>
+            <%= image_tag(@product.image_url, id: "zoom_product_showpage",
+            class: "img-responsive product_show_page_image img-zoom",
+            alt: @product.image_url) %>
+          </p>
         </div>
-      </p>
 
-      <% cache @product do %>
-      <p class="description">
-       <strong>Description:</strong>
-        <%= @product.description %>
-      </p>
-      <% end %>
+        <div class="col-sm-3 col-md-3">
+          <p>
+            <strong>Name:</strong>
+            <%= @product.name %>
+          </p>
 
-      <% if user_signed_in? %>
-      <%= form_with(url: '/payments/create') do |form| %>
-        <%= hidden_field_tag(:product_id, @product.id) %>
-        <%= render partial: "shared/stripe_checkout_button" %>
-      <% end %>
-      <% else %>
-        <button class="btn-info"><%= link_to('Please Login to buy', new_user_session_path) %></button>
-      <% end %>
+          <p>Average Rating:
+            <div id="average_rating_outside_div">
+              <p><div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+            </div>
+          </p>
 
-      <% cache @product do %>
-      <p>
-        <strong>Colour:</strong>
-        <%= @product.colour %>
-      </p>
-      <% end %>
+          <p class="description">
+           <strong>Description:</strong>
+            <%= @product.description %>
+          </p>
 
-      <% cache @product do %>
-      <p>
-        <strong>Price:</strong>
-        <%= @product.price %>
-      </p>
-      <% end %>
+          <% if user_signed_in? %>
+          <%= form_with(url: '/payments/create') do |form| %>
+            <%= hidden_field_tag(:product_id, @product.id) %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
+          <% else %>
+            <button class="btn-info"><%= link_to('Please Login to buy', new_user_session_path) %></button>
+          <% end %>
 
-      <%= render 'new_comment' %>
+          <p>
+            <strong>Colour:</strong>
+            <%= @product.colour %>
+          </p>
 
-      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!
+          <p>
+            <strong>Price:</strong>
+            <%= @product.price %>
+          </p>
+
+          <%= render 'new_comment' %>
+
+          <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!
+          </div>
+
+          <%= render 'comments' %>
+
+          <%= will_paginate @comments %>
+
       </div>
-
-      <%= render 'comments' %>
-
-      <%= will_paginate @comments %>
-
-    </div>
+    <% end %>
   </div>
 
   <% if (signed_in? && current_user.admin?) %>
