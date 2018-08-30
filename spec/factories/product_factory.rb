@@ -13,3 +13,4 @@ FactoryBot.define do
     	image_url "app/assets/images/spotify.jpg"
     end
   end
+end
