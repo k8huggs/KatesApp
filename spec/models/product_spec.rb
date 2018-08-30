@@ -1,22 +1,24 @@
 require 'rails_helper'
 
 describe Product do
+  context "when the product has comments" do
+    let(:product) { FactoryBot.create(:product) }
+    let(:user) { FactoryBot.create(:user) }
 
-let(:product) { Product.create!(name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45)}
+    before do
+      product.comments.create!(rating: 1, user: user, body: "Awful")
+      product.comments.create!(rating: 3, user: user, body: "Ok")
+      product.comments.create!(rating: 5, user: user, body: "Great")
+    end
 
-let(:user) {User.create!(email: "myrandom@email.com", first_name: "User", last_name: "Random", admin: false, password: "Yellow123")}
-  before do
-    product.comments.create!(rating: 1, user: user, body: "Bad Session")
-    product.comments.create!(rating: 3, user: user, body: "Ok Session")
-    product comments.create!(rating: 5, user: user, body: "Great Session!")
+    it "return the average rating of the product" do
+      expect(product.average_rating).to eq 3
+    end
   end
 
-  it "returns the average rating of all comments" do
-    expect(product.average_rating).to eq 3
+  context "is not valid without name" do
+    it "return that a product with only a description is not valid" do
+      expect(Product.new(description: "test description")).not_to be_valid
+    end
   end
-
-  it "is not valid without a name" do
-    expect(Product.new(description: "Cool Session")).not_to_be_valid
-  end
-
 end

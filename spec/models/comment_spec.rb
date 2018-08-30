@@ -1,22 +1,20 @@
 require 'rails_helper'
 
 describe Comment do
-  context "testing validations" do
+  context "is not valid without body or user or rating" do
+    let(:product) {Product.create!(name: "Black Shirt")}
+    let(:user) { FactoryBot.create(:user)}
 
-    it "is not valid without a rating" do
-      expect(Comment.new(rating:nil)).not_to be_valid
-    end
- 
-    it "is not valid without text" do
-      expect(Comment.new(body:nil)).not_to be_valid
+    it "return that a comment without a body is not valid" do
+      expect(product.comments.new(rating: 1, user: user)).not_to be_valid
     end
 
-    it "is not valid without a user id" do
-      expect(Comment.new(user_id:nil)).not_to be_valid
+    it "return that a comment without a user is not valid" do
+      expect(product.comments.new(rating: 1, body: "test")).not_to be_valid
     end
 
-    it "is not valid if a user doesn't use an integer" do
-      expect(Comment.new(user_id: 1, body:"abc", rating: "abc")).not_to be_valid
+    it "return that a comment without a rating is not valid" do
+      expect(product.comments.new(user: user, body: "test")).not_to be_valid
     end
   end
 end

@@ -1,10 +1,10 @@
 FactoryBot.define do
-  sequence(:name) { |n| "product#{n}" }
   factory :product, class: Product do
-    name
-    description "30 Minute Midgrade"
-    price 45.00
-    color "Pretty beautiful"
-    image_url "app/assets/images/spotify.jpg"
+    name "test product"
+    description "test description"
+    image_url "test.jpg"
+    colour "blue"
+    price "12.5"
+    gender "women"
   end
 end
