@@ -5,6 +5,5 @@ FactoryBot.define do
     image_url "test.jpg"
     colour "blue"
     price "12.5"
-    gender "women"
   end
 end
