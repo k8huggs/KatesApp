@@ -1,4 +1,9 @@
 FactoryBot.define do
+  factory :user do
+    first_name 'John'
+    last_name  'Doe'
+    admin false
+
     sequence(:name) { |n| "product#{n}" }
    	factory :product, class: Product do
     	name
