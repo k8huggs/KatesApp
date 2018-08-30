@@ -3,7 +3,7 @@ require 'rails_helper'
   before do
     @user = FactoryBot.create(:user, :admin)
     sign_in @user
-    @product = FactoryBot.create(:product, name: "30 Minute GAWA", description: "Absolutely life-changing session. Get the coaching to set you on a new trajectory.", price: 120.00)
+    @product = FactoryBot.create(:product, name: "30 Minute GAWA", description: "Absolutely life-changing session. Get the coaching to set you on a new trajectory.", price: 120.00, colour: Glorious)
   end
    context 'GET #index' do
     it 'renders the index template' do
