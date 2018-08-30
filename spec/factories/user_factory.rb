@@ -7,14 +7,9 @@ FactoryBot.define do
     first_name "Jane"
     last_name "Jones"
     admin false
-  end
 
-  factory :admin, class: User do
-    email "admin@example.de"
-    password "testpassword"
-    first_name "real"
-    last_name "admin"
+  trait :admin do
     admin true
+    end
   end
-
 end
