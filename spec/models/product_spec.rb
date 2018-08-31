@@ -12,6 +12,7 @@ require 'rails_helper'
     end
      it "is not valid without a name" do
       expect(Product.new(description: "Cool Session")).not_to_be_valid
+      end
     end
-   end
- end
+  end
+end
