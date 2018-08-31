@@ -71,16 +71,30 @@ em.current {
 
 input#product_name {
   background-color: #e7dfd0;
+  padding: 10px;
+  margin: 10px;
 }
 
 input#product_price {
   background-color: #e7dfd0;
+  padding: 10px;
+  margin: 10px;
 }
 
 input#product_image_url {
   background-color: #e7dfd0;
+  padding: 10px;
+  margin: 10px;
 }
 
 textarea#product_description {
   background-color: #e7dfd0;
+  padding: 10px;
+  margin: 10px;
+}
+
+button.btn-info {
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
 }
