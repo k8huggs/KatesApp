@@ -12,11 +12,12 @@ describe Product do
     product.comments.create!(rating: 5, user: user, body: "Great Session")
   end
 
-  it "returns the average rating off all comments" do
-    expect(product.average_rating).to eq 3
-  end
+    it "returns the average rating off all comments" do
+      expect(product.average_rating).to eq 3
+    end
 
-  it "is not valid without a name" do
-    expect(Product.new(description: "Great Session")).not_to be_valid
+    it "is not valid without a name" do
+      expect(Product.new(description: "Great Session")).not_to be_valid
+    end
   end
 end
