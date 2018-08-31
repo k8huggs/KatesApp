@@ -17,11 +17,15 @@
             <%= @product.name %>
           </p>
 
+          <br>
+
           <p>Average Rating:
             <div id="average_rating_outside_div">
               <p><div class="rated" data-score="<%= @product.average_rating %>"></div></p>
             </div>
           </p>
+
+          <br>
 
           <p class="description">
            <strong>Description:</strong>
@@ -37,10 +41,14 @@
             <button class="btn-info"><%= link_to('Please Login to buy', new_user_session_path) %></button>
           <% end %>
 
+          <br>
+
           <p>
             <strong>Colour:</strong>
             <%= @product.colour %>
           </p>
+
+          <br>
 
           <p>
             <strong>Price:</strong>
