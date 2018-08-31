@@ -1,6 +1,10 @@
 require 'rails_helper'
  describe Product do
-   let(:product) { Product.create!(name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45)}
+   let(:product) {
+     product_category = Category.create!(product_category: "Sessions", name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45 )
+     Product.create!(name: "30 Minute Midgrade", colour: "blue", description: "Lifechanging Coaching.", price: 45)
+   }
+
    let(:user) {User.create!(email: "random@email.com", first_name: "User", last_name: "random", admin: false, password: "Yellow123")}
 
     before do
@@ -16,5 +20,5 @@ require 'rails_helper'
     it "is not valid without a name" do
       expect(Product.new(description: "Cool Session")).not_to_be_valid
     end
-  
+
 end
