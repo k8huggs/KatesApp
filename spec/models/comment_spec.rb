@@ -2,11 +2,11 @@ require 'rails_helper'
 
 describe Comment do
   context "if product has comments" do
-    product_category = Category.create!(
-      product_category: "Test Category-Comments",
-      description: "A test category for Comments",
-      image_url: "products/p1.jpg"
-    )
+    # product_category = Category.create!(
+    #   product_category: "Test Category-Comments",
+    #   description: "A test category for Comments",
+    #   image_url: "products/p1.jpg"
+    # )
     let(:product) {
       Product.create!(
         name: "Product-test",
