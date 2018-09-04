@@ -1,8 +1,12 @@
 FactoryBot.define do
-  factory :test_comment, class: Comment do
-    user_id { Faker::Number.number(5).to_i }
-    body { Faker::Lorem.sentence }
-    rating { Faker::Number.decimal(1,0).to_i/2 }
-    product_id { Faker::Number.number(5).to_i }
+  sequence(:user_id) { |n| "#{n}" }
+  sequence(:product_id) { |n| "#{n}" }
+
+  factory :comment, class: Comment do
+    rating 5.0
+    body 'amazing'
+    user_id
+    product_id
   end
+
 end

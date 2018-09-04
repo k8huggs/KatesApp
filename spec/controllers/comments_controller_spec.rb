@@ -6,8 +6,7 @@ describe CommentsController, type: :controller do
       sign_in @user
     end
     it "can add comments" do
-      @category = FactoryBot.create(:test_category)
-      @product = FactoryBot.create(:test_product, category_id: @category.id)
+      @product = FactoryBot.create(:test_product)
       @comment = FactoryBot.build(:test_comment, product_id: @product.id, user: @user )
       expect(@comment).to be_valid
      end
