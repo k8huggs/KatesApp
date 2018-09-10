@@ -29,6 +29,6 @@ module Nameofapp
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    config.cache_store = :redis_store, "#{ENV['REDIS_URL']}/0/cache"
+    # config.cache_store = :redis_store, "#{ENV['REDIS_URL']}/0/cache"
   end
 end

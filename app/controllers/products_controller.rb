@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   def show
     # byebug
     @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
-    @view_count = increment_view_count
+    # @view_count = increment_view_count
   end
 
   # GET /products/new
@@ -83,9 +83,9 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
 
-    def increment_view_count
-      $redis.hincrby(:product_view_count, @product.id, 1)
-    end
+    # def increment_view_count
+    #   $redis.hincrby(:product_view_count, @product.id, 1)
+    # end
 
 end
 
