@@ -56,8 +56,7 @@
           </p>
 
           <%= render 'views' %>
-          <%= render 'viewed' %>
-          <%= render 'new_comment' %>
+          <br/><small><i><%= pluralize(@view_count, "view") %></i></small>
 
           <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!
           </div>
