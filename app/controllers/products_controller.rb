@@ -20,7 +20,8 @@ class ProductsController < ApplicationController
   def show
     # byebug
     @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
-    # @view_count = increment_view_count
+    @view_count = @product.views
+    @product.viewed
   end
 
   # GET /products/new

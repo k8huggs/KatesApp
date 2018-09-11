@@ -5,6 +5,7 @@ FactoryBot.define do
     name
     price 10.0
     description "Test description"
+    colour "red"
   end
 
 end

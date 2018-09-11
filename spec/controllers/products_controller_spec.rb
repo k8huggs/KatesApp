@@ -3,10 +3,10 @@ require 'rails_helper'
 describe ProductsController, type: :controller do
   context 'unauthenticated user' do
     it 'cannot edit' do
-      @product = FactoryBot.create(:test_product)
+      @product = FactoryBot.create(:product)
       get :edit, params:{id: @product.id}
-      expect(response).to redirect_to(products_path)
-      expect(flash[:notice]).to match("You need to be an Admin to perform this action!")
+      expect(response).to redirect_to(new_user_session_path)
+      expect(flash[:alert]).to match("You need to sign in or sign up before continuing.")
     end
   end
 end

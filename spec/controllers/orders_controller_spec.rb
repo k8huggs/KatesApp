@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe OrdersController, type: :controller do
-  @user = FactoryBot.create(:test_user)
+  @user = FactoryBot.create(:user)
 
   context 'unauthenticated user' do
     it 'redirects to login' do

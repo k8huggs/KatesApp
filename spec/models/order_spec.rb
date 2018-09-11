@@ -2,23 +2,9 @@ require 'rails_helper'
 
 describe Order do
 
-  let(:product) {
-    product_category = Category.create!(
-      product_category: "Test Order Category",
-      description: "A category for testing orders",
-      image_url: "products/p1.jpg"
-    )
-    Product.create!(
-      name: "Test product orders",
-      description: "This is a test product",
-      image_url: "products/s2.jpg",
-      category_id: product_category.id
-    )
-  }
+  let(:product) { FactoryBot.create(:product) }
 
-  let(:user) {
-    User.create!(email: "test@test.com", password: "test123")
-  }
+  let(:user) { FactoryBot.create(:user) }
 
   it "is a valid order" do
     expect(Order.new(

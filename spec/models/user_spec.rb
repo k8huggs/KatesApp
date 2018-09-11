@@ -2,12 +2,10 @@ require 'rails_helper'
 
 describe User do
 
-  let(:user) {
-    User.create!(email: "test@test.com", password: "test123")
-  }
+  let(:user) { FactoryBot.create(:user, password: "test123") }
 
   it "is a valid user" do
-    expect(user.email).to eq "test@test.com"
+    expect(user.email).to match (/jim_[0-9\.]+@example.com/)
   end
 
   it "is not a valid password" do

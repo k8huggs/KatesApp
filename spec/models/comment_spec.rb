@@ -12,13 +12,10 @@ describe Comment do
         name: "Product-test",
         description: "This is a test ptoduct",
         image_url: "products/s2.jpg",
-        category_id: product_category
       )
     }
 
-    let(:user) {
-      User.create!(email: "test@test.com", password: "test123")
-    }
+    let(:user) { FactoryBot.create(:user) }
 
     it "is invalid without a comment" do
       expect(Comment.new(rating: 5, user: user)).not_to be_valid
